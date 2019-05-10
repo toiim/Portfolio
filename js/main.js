@@ -11,3 +11,5 @@ function displayToggle() {
     }
     console.log('clicked')
   }
+
+AOS.init()
