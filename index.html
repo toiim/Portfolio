@@ -15,8 +15,13 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -29,17 +34,19 @@
       <div class="header"></div>
 
       <div class="imageBox">
-          <div id="special" style="display:none"><img src="./css/images/dancer1.gif"></div>
+        <div id="special" style="display:none">
+          <img src="./css/images/dancer1.gif" />
+        </div>
       </div>
       <div class="textBox">
-          <div class="textInner">
+        <div class="textInner">
           <h1>
-            Hey I'm Tom Parke.
+            Hey, I'm Tom Parke.
           </h1>
           <h2>
             I'm a Graphic & Web Designer.<br />
             I studied at
-            <a href="https://www.billyblue.edu.au/" targer="_blank"
+            <a class="link" href="https://www.billyblue.edu.au/" targer="_blank"
               >Billy Blue College of Design</a
             >. I am very proactive and am always expanding my skill set.<br />
             I have professional experience working both in teams and as a
@@ -47,19 +54,43 @@
             I’m proficient in Photoshop, Illustrator, InDesign, Wordpress, HTML,
             CSS, Javascript, Node & Vue.<br />
             This is my portfolio, I hope you enjoy it. If you like what you see,
-            please <a href="#">get in touch</a> with me.
+            please
+            <a class="link" href="mailto:tom@tomparke.design">get in touch</a>
+            with me.
           </h2>
-          <div class="btn"><a href="tel:0411-212-391"><h2>Call Me</h2></a></div>
-          <div class="btn"><a href="mailto:tom@tomparke.design"><h2>Email Me</h2></a></div>
-          <div class="btn" id="entertain"><h2>Entertainment</h2></div>
+          <a href="tel:0411-212-391" class="link"
+            ><div class="btn"><h2>Call Me</h2></div></a
+          >
+          <a href="mailto:tom@tomparke.design" class="link"
+            ><div class="btn"><h2>Email Me</h2></div></a
+          >
+          <a href="#"
+            ><div class="btn" id="entertain"><h2>Entertainment</h2></div></a
+          >
         </div>
       </div>
     </div>
-    <div class="element" data-aos="flip-up"><p>Welcome</p></div>
-    <div class="element" data-aos="flip-up"><p>
-      <svg x="0px" y="0px"
-      viewBox="0 0 690 88" style="enable-background:new 0 0 841.89 595.28;" xml:space="preserve">
-     <path class="st0" d="M33.12,34.15H21.73v13.98c0,1.15,0.06,2.2,0.17,3.15c0.12,0.95,0.38,1.77,0.78,2.46
+    <div class="element" data-aos="flip-up">
+      <h1>Welcome</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo magni
+        dolor maiores vel molestias, aperiam vero, vitae aliquam ex amet nostrum
+        dolorum repellat doloribus laboriosam voluptates ullam dicta placeat.
+        Quae.
+      </p>
+    </div>
+    <div class="element" data-aos="flip-up">
+      <p>
+        <svg
+          x="0px"
+          y="0px"
+          viewBox="0 0 690 88"
+          style="enable-background:new 0 0 841.89 595.28;"
+          xml:space="preserve"
+        >
+          <path
+            class="st0"
+            d="M33.12,34.15H21.73v13.98c0,1.15,0.06,2.2,0.17,3.15c0.12,0.95,0.38,1.77,0.78,2.46
      c0.4,0.69,1.02,1.22,1.86,1.6c0.83,0.37,1.94,0.56,3.32,0.56c0.69,0,1.6-0.07,2.72-0.21c1.12-0.14,1.97-0.47,2.55-0.99v10.79
      c-1.44,0.52-2.93,0.86-4.49,1.04c-1.55,0.17-3.08,0.26-4.57,0.26c-2.19,0-4.2-0.23-6.04-0.69c-1.84-0.46-3.45-1.19-4.83-2.2
      c-1.38-1.01-2.46-2.32-3.23-3.93c-0.78-1.61-1.17-3.56-1.17-5.87V34.15H0.5V23.8h8.29V11.37h12.94V23.8h11.39V34.15z M38.12,44.76
@@ -142,14 +173,16 @@
      c2.02,1.01,3.58,2.41,4.7,4.19c1.12,1.78,1.88,3.88,2.29,6.3c0.4,2.42,0.6,5.03,0.6,7.85v23.12H674.3V45.19
      c0-1.21-0.05-2.46-0.13-3.75c-0.09-1.3-0.34-2.49-0.78-3.58c-0.43-1.09-1.1-1.98-1.99-2.68s-2.17-1.04-3.84-1.04
      c-1.67,0-3.02,0.3-4.06,0.91c-1.04,0.6-1.83,1.41-2.37,2.42c-0.55,1.01-0.91,2.15-1.08,3.41c-0.17,1.27-0.26,2.59-0.26,3.97v20.88
-     h-12.94V23.8z"/>
-    </svg></p></div>
+     h-12.94V23.8z"
+          />
+        </svg>
+      </p>
+    </div>
     <div class="element" data-aos="flip-up"><p>Hey</p></div>
     <div class="element" data-aos="flip-up"><p>Hey</p></div>
     <div class="footer" data-aos="flip-up"><p>Hey</p></div>
 
     <script src="./js/main.js" async defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
   </body>
 </html>

@@ -12,7 +12,7 @@ h1 {
   transition: all 0.3s ease;
 }
 
-a {
+.link {
   color: #e53b3b;
 }
 
@@ -24,23 +24,6 @@ a {
 }
 
 /* Classes */
-
-@media screen and (max-width: 1280px) {
-  .flexContainer {
-    display: block;
-  }
-
-  .imageBox {
-    display: none;
-  }
-
-  .textBox {
-    padding: 2em;
-    margin: 0em;
-    height: 100vh;
-    transition: all 0.3s ease;
-  }
-}
 
 .btn {
   fill: transparent;
@@ -94,7 +77,7 @@ h1:hover {
 }
 
 .element:hover {
-  padding: 2em;
+  padding: 3em 1em;
   transition: all 0.3s ease;
 }
 
@@ -120,6 +103,8 @@ a::selection {
 a:visited {
   color: #e53b3b;
 }
+
+
 
 /* Media Queries */
 
@@ -157,6 +142,25 @@ a:visited {
     transition: all 0.3s ease;
   }
 }
+
+
+
+@media screen and (max-width: 1280px) {
+    .flexContainer {
+      display: block;
+    }
+  
+    .imageBox, #entertain {
+      display: none;
+    }
+  
+    .textBox {
+      padding: 2em;
+      margin: 0em;
+      height: 100vh;
+      transition: all 0.3s ease;
+    }
+  }
 
 .st0 {
   fill: none;
