@@ -1,15 +1,15 @@
+AOS.init()
+
 let entertain = document.getElementById('entertain')
+let special = document.getElementById("special")
 
 entertain.addEventListener("click", displayToggle)
 
 function displayToggle() {
-    var x = document.getElementById("special");
-    if (x.style.display == "none") {
-      x.style.display = "block";
+    if (special.style.display == "none") {
+      special.style.display = "block";
     } else {
-      x.style.display = "none";
+      special.style.display = "none";
     }
     console.log('clicked')
   }
-
-AOS.init()

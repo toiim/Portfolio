@@ -12,6 +12,14 @@ h1 {
   transition: all 0.3s ease;
 }
 
+a {
+    color: #e53b3b;
+}
+
+img {
+    width: 100%;
+}
+
 .link {
   color: #e53b3b;
 }
@@ -42,7 +50,7 @@ h1 {
 .element {
   padding: 1em;
   text-align: center;
-  transition: all 0.3s ease;
+  display: flex;
 }
 
 .footer {
@@ -76,17 +84,7 @@ h1:hover {
   transition: all 0.1s ease;
 }
 
-.element:hover {
-  padding: 3em 1em;
-  transition: all 0.3s ease;
-}
-
 /* Pseudo */
-
-.element:nth-of-type(even) {
-  background-color: black;
-  color: #eee;
-}
 
 h2::selection,
 h1::selection,
@@ -104,11 +102,11 @@ a:visited {
   color: #e53b3b;
 }
 
-
-
 /* Media Queries */
 
-@media screen and (min-width: 1280px) {
+/* Desktop */
+
+@media screen and (min-width: 1024px) {
   .flexContainer {
     display: flex;
   }
@@ -143,44 +141,44 @@ a:visited {
   }
 }
 
+/* Mobile + Tablet */
 
-
-@media screen and (max-width: 1280px) {
-    .flexContainer {
-      display: block;
-    }
-  
-    .imageBox, #entertain {
-      display: none;
-    }
-  
-    .textBox {
-      padding: 2em;
-      margin: 0em;
-      height: 100vh;
-      transition: all 0.3s ease;
-    }
+@media screen and (max-width: 1024px) {
+  .flexContainer {
+    display: block;
   }
 
-.st0 {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 0.1em;
-  stroke-miterlimit: 15;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 0;
-  animation: dash 5s linear forwards;
-}
-
-@keyframes dash {
-  from {
-    stroke-dashoffset: 1000;
+  .imageBox {
+    display: none;
   }
-  to {
-    stroke-dashoffset: 0;
+
+  #entertain {
+    display: none;
+  }
+
+  .textBox {
+    padding: 2em;
+    margin: 0em;
+    height: 100vh;
+    transition: all 0.3s ease;
   }
 }
 
-svg {
-  margin: auto;
+.tomparke {
+    width: 90vw;
+    margin: auto auto;
+}
+
+.portfolioItem, .portfolioDesc {
+    width: 50vw;
+}
+
+.portfolioItem img:hover {
+    width: 90%;
+    transition: width 0.2s ease;
+}
+
+.portfolioItem img {
+    margin: auto;
+    transition: width 0.2s ease;
 }
