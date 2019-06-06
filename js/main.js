@@ -1,5 +1,3 @@
-AOS.init()
-
 let entertain = document.getElementById('entertain')
 let special = document.getElementById("special")
 
