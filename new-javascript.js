@@ -40,7 +40,8 @@ function putBack() {
   boring.style.display = "block"
   notBoring.classList.add("fade-out")
   notBoring.style.animation = " "
-  setTimeout(function () {
-    notBoring.style.display = "none"
-  },200)
+  notBoring.style.display = "none"
+  setTimeout(function(){
+    notBoring.classList.remove("fade-out")
+  },1000)
 }
