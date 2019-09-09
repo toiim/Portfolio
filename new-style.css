@@ -12,6 +12,10 @@ div {
   transition: all 0.2s ease;
 }
 
+.show-mobile {
+  display: none;
+}
+
 /* Boring Stuff */
 
 #boring {
@@ -64,8 +68,8 @@ div {
 }
 
 .main-content {
-  width: 1000px;
-  height: 570px;
+  max-width: 1000px;
+  max-height: 570px;
   border: 2px solid black;
   align-self: center;
   margin: auto;
@@ -74,11 +78,11 @@ div {
 }
 
 .sidebar {
-  width: 250px;
+  max-width: 250px;
 }
 
 .text {
-  width: 750px;
+  max-width: 750px;
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
@@ -90,7 +94,7 @@ div {
 
 .text p,
 .contact-links a {
-  font-size: 25px;
+  font-size: 20px;
   margin: 0px;
   color: black;
 }
@@ -108,7 +112,7 @@ div {
 }
 
 .links a:hover {
-  letter-spacing: 3px;
+  letter-spacing: 0.05em;
   transition: all 0.2s ease;
 }
 
@@ -184,11 +188,16 @@ div {
 
 @media screen and (max-width: 420px) {
 
+  .show-mobile {
+    display: inline-block;
+  }
+
   .main-content {
     position: relative;
+    align-self: flex-start;
+    margin: 0;
     width: 100vw;
-    height: 90vh;
-    padding-bottom: 30px;
+    height: 80vh;
     border: none ;
   }
 
@@ -234,10 +243,10 @@ div {
   
   #purple-box {
     position: fixed;
-    bottom: -10vw;
+    bottom: -5vh;
     right: -10vw;
     width: 80vw;
-    height: 30vw;
+    height: 20vh;
     background-color: #bc519e;
     transform: rotate(-6deg);
     z-index: 0;
@@ -289,6 +298,10 @@ div {
   position: absolute;
   z-index: 2;
   animation: pulse 2s infinite ease;
+}
+
+#monster:hover {
+ cursor: pointer;
 }
 
 #wheel {
