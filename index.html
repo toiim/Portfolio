@@ -1,60 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="new-style.css" />
-  <title>Tom Parke | Portfolio</title>
-</head>
-<body>
-  <div id="boring">
-    <div class="container">
-      <div class="red-box"></div>
-      <div class="main-content">
-        <div class="sidebar">
-          <div class="circle">
-            <img src="hand.svg"/>
-          </div>
-          <div class="contact-links">
-            <a href="/Design Portfolio 2018.pdf" target="_blank">2018 Portfolio</a>
-            <a href="/Design Portfolio 2019.pdf" target="_blank">2019 Portfolio</a>
-            <a href="Tom Parke - Resume.pdf" target="_blank">Résumé</a>
-            <a href="https://www.instagram.com/tomparke_/" target="_blank">Instagram</a>
-            <a href="https://www.artstation.com/artist/toiim" target="_blank">Artstation</a>
-          </div>
-        </div>
-        <div class="line">
-        </div>
-        <div class="text">
-          <h1>Hi, I’m Tom Parke</h1>
-          <p>I'm a Designer with lots of cool skills.</br>
-            I'm always expanding my skill set.</br>
-            I have professional experience working both in teams and as a freelancer as a Web & Graphic Designer.</br>
-            I’m experienced in using Photoshop, Illustrator, InDesign, Wordpress, HTML, CSS, Javascript, Node & Vue JS.</br>
-            If you like what you see, please get in touch with me.</p>
-          <div class="links"><a href="mailto:tom@tomparke.design?subject=I just saw your website!"><span class="hide-mobile">tom@tomparke.design</span><span class="show-mobile">> Email Me</span>
-            </a></br>
-            <a href="tel:0411-212-391"><span class="hide-mobile">0411 212 391</span><span class="show-mobile">> Call Me</span></a>
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="reset.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tom Parke | Portfolio</title>
+  </head>
+  <body>
+    <div id="shape-1"></div>
+    <div id="shape-2"></div>
+
+    <div id="main">
+      <div id="links">
+        <img id="hand" src="hand.svg" class="no-mobile" />
+        <!-- <a href="#">Web Portfolio</span><br /> -->
+        <a href="/portfolio.pdf">Design Portfolio</a><br />
+        <a href="/resume.pdf">Resumé</a><br />
+        <a href="http://www.artstation.com/toiim">Artstation</a><br />
+        <a href="http://www.instagram.com/tomparke_">Instagram</a><br />
+      </div>
+      <div id="text">
+        <h1>Hi, I&#39;m Tom Parke</h1>
+        <p>
+          I&#39;m a Web Developer with a background in Graphic Design. I&#39;ve
+          worked for branding agencies, niche studios, and fortune 500
+          companies. I am always expanding skill set (I&#39;m a fast learner!).
+          Here&#39;s what I can offer you today:
+        </p>
+
+        <h4>Web</h4>
+        <p>
+          AWS (Lambda, DynamoDB, API Gateway, Amplify, etc.), NodeJS, ExpressJS,
+          Wordpress, VanillaJS, VueJS, JQuery, MongoDB, Sass, Pug
+        </p>
+
+        <h4>Design</h4>
+        <p>
+          Adobe XD, Adobe Photoshop, Adobe InDesign, Adobe Illustrator, Adobe
+          After Effects
+        </p>
+        <hr />
+        <p>
+          If you like what you see, and think I could add value to your company,
+          get in touch:
+        </p>
+        <div id="contact-links">
+          <a href="mailto:tom.parke15@gmail.com">tom.parke15@gmail.com</a><br />
+          <a href="tel:0411-212-391">0411 212 391</a>
         </div>
       </div>
-      <div id="purple-box">
-        <h1><span class="hide-mobile">Feeling </span>Bored?</h1>
-      </div>
     </div>
-  </div>
-  
-  <div id="not-boring">
-    <div id="spin-container">
-      <img class="pulse-4" id="wheel" width="500" src="wheel.svg" />
-      <img id="monster" width="300" src="monster.svg" />
-    </div>
-    <div id="slide-container">
-      <div class="left"><img width="960" src="background.gif"></div>
-      <div class="right"><img width="960" src="background.gif"></div>
-    </div>
-  </div>
-  <script src="new-javascript.js"></script>
-</body>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Tom Parke",
+        "url": "http://tomparke.design",
+        "sameAs": [
+          "https://twitter.com/toiim",
+          "https://artstation.com/toiim",
+          "https://instagram.com/tomparke_"
+          "https://www.linkedin.com/in/tom-parke-539b3890/"
+        ]
+      }
+    </script>
+  </body>
 </html>
