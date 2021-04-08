@@ -1,211 +1,136 @@
-* {
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;700&family=Roboto:wght@300;500&display=swap");
+
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
-body {
-  background-color: #eee;
-  height: 100vh;
-  width: 100vw;
-  color: #222;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
+.show-hello {
+  display: none;
 }
 
 #main {
-  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  width: 100%;
+  letter-spacing: 0.025em;
   display: flex;
-  z-index: 5;
+  flex-direction: column-reverse;
 }
-#main #links a {
-  color: #222;
-  font-weight: bold;
-  font-size: 18px;
+
+#links {
+  background-color: #0050c8;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+#links a {
+  font-family: "Crimson Pro", serif;
+  font-weight: 300;
+  color: white;
+  font-weight: 500;
+  font-size: 1.5em;
+  /* text-decoration: none; */
+  text-align: center;
+  line-height: 2em;
+}
+
+#contact-links {
+  margin-top: 1em;
+}
+
+#contact-links a {
+  font-family: "Crimson Pro", serif;
+  font-weight: 300;
+  color: #0050c8;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+#text {
+  padding: 1em;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-family: "Crimson Pro", serif;
+  font-weight: 700;
+  font-size: 2.5em;
+  line-height: 1em;
+  margin-bottom: 0.5em;
+}
+h2 {
+  font-family: "Crimson Pro", serif;
+  font-weight: 300;
+}
+h4 {
+  margin-top: 0.75em;
+  margin-bottom: 0.25em;
   line-height: 1.3em;
+  font-weight: 500;
+  font-size: 1.5em;
 }
 
-hr {
-  background-color: #222;
-  height: 1px;
-  border: none;
+p {
+  margin: 0.2em 0;
 }
 
-#shape-1 {
-  background-color: #E53B3B;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  animation: wander-1 45s linear reverse infinite;
-  transform-origin: 50% 50%;
+span {
+  color: #0050c8;
+  font-weight: 500;
 }
 
-#shape-2 {
-  background-color: #BC519E;
-  position: fixed;
-  animation: wander-1 45s linear infinite;
-  z-index: 0;
-  bottom: 0;
-  right: 0;
-  transform-origin: 50% 50%;
+footer {
+  margin-top: 1em;
 }
 
-/* Mobile */
-@media screen and (max-width: 859px) {
-  h1 {
-    font-weight: bold;
-    font-size: 35px;
-    margin-bottom: 8px;
+@media only screen and (min-width: 800px) {
+  .show-hello {
+    display: inline;
   }
-
-  h4 {
-    font-weight: bold;
-    font-size: 25px;
-    margin: 5px 0px;
+  html {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247, 247, 250);
   }
-
-  p {
-    line-height: 1.2em;
-  }
-
-  .no-mobile {
-    display: none;
-  }
-
   #main {
-    width: 100vw;
-    margin: auto;
-    padding: 10px;
-    flex-direction: column-reverse;
+    width: 800px;
+    flex-direction: row;
+    border-radius: 0.25em;
+    box-shadow: 0.5em 0.5em 1.5em rgba(0, 0, 50, 0.2);
   }
-
-  #shape-1, #shape-2 {
-    width: 30vh;
-    height: 30vh;
+  #links a {
+    text-align: left;
+    line-height: 1.2em;
+    transition: transform 0.2s ease;
   }
-
-  #shape-1 {
-    top: -40px;
-    left: -40px;
-  }
-
-  #shape-2 {
-    bottom: -40px;
-    right: -40px;
-  }
-
-  #contact-links {
-    margin-top: 5px;
+  #links a:hover {
+    transform: translateX(0.1em);
   }
   #contact-links a {
-    line-height: 1.2em;
-    color: #222;
-  }
-
-  #links {
-    margin-top: 5px;
-  }
-}
-/* Dekstop */
-@media screen and (min-width: 860px) {
-  h1 {
-    font-weight: bold;
-    font-size: 55px;
-    margin-bottom: 15px;
-  }
-
-  h4 {
-    font-weight: bold;
-    font-size: 30px;
-    margin: 10px 0px;
-  }
-
-  p {
-    font-size: 17px;
-    line-height: 1.1em;
-  }
-
-  .no-desktop {
-    display: none;
-  }
-
-  #main {
-    position: relative;
-    padding: 40px;
-    background-color: #eee;
-    border: #222 0px solid;
-    border-radius: 15px;
-    width: 850px;
-    max-width: 98vw;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-  }
-
-  #links {
-    width: 170px;
-    flex-shrink: 0;
-    padding-right: 20px;
-    border-right: 1px solid #222;
-  }
-
-  #hand {
-    margin-bottom: 10px;
-    animation: wave 1.3s ease;
-  }
-
-  #text {
-    padding-left: 20px;
-  }
-
-  #contact-links {
-    margin-top: 10px;
-  }
-  #contact-links a {
-    font-size: 30px;
-    color: #222;
-    line-height: 1.2em;
-    font-weight: bold;
-    transition: all 0.2s ease;
+    display: inline-block;
+    transition: transform 0.2s ease;
   }
   #contact-links a:hover {
-    transition: all 0.2s ease;
-    letter-spacing: 0.05em;
+    transform: translateX(0.2em);
   }
-
-  #shape-1, #shape-2 {
-    width: 50vh;
-    height: 50vh;
+  #links {
+    padding: 2.5em;
+    border-radius: 0.25em 0 0 0.25em;
   }
-}
-@keyframes wave {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(15deg);
-  }
-  50% {
-    transform: rotate(-18deg);
-  }
-  75% {
-    transform: rotate(18deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-@keyframes wander-1 {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    border-radius: 50%;
-    transform: rotate(180deg) scale(1.2);
-  }
-  100% {
-    transform: rotate(360deg);
+  #text {
+    padding: 2.5em;
+    border-radius: 0 0.25em 0.25em 0;
+    background-color: white;
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+@media only screen and (min-width: 1200px) {
+  #main {
+    width: 900px;
+  }
+}
